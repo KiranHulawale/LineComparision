@@ -11,9 +11,9 @@ public class LineComparision {
         static void compare() {
 
                 if ( length1> length2) {
-                        System.out.println("Line 2 is greater than Line 1");
+                        System.out.println("Line 1 is greater than Line 2");
                 } else {
-                        System.out.println("Line 2 is smaller than Line 1");
+                        System.out.println("Line 1 is smaller than Line 2");
                 }
         }
 

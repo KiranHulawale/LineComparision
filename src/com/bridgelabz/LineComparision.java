@@ -5,6 +5,18 @@ import java.lang.Math;
 
 public class LineComparision {
 
+static float length1=0;
+       static float length2=0;
+
+        static void compare() {
+
+                if ( length1> length2) {
+                        System.out.println("Line 2 is greater than Line 1");
+                } else {
+                        System.out.println("Line 2 is smaller than Line 1");
+                }
+        }
+
         static void equals(){
         // welcome to Line Comparison Program.
         Scanner sc = new Scanner(System.in);
@@ -26,10 +38,10 @@ public class LineComparision {
         double y4 = sc.nextDouble();
 
 
-        double length1 = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+         length1 = (float) Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
         System.out.println("Length of line is: " + length1);
 
-        double length2 = Math.sqrt((x4 - x3) * (x4 - x3) + (y4 - y3) * (y4 - y3));
+         length2 = (float) Math.sqrt((x4 - x3) * (x4 - x3) + (y4 - y3) * (y4 - y3));
         System.out.println("Length of line is: " + length2);
 
         if (length1 == length2) {
@@ -42,5 +54,6 @@ public class LineComparision {
 
     public static void main(String[] args) {
         equals();
+        compare();
     }
 }
